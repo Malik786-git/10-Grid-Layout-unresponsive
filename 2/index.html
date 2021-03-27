@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout 2</title>
+    <style>
+        *{  margin: 0; padding: 0; box-sizing: border-box; }
+        body{text-align: center; font-size: 20px; color: white; }
+         .wrapped{
+             border: 2px solid black;
+             display: grid;
+            
+             margin: 10px 10px;
+             grid-template-columns: 200px 1fr 150px;
+             grid-template-rows: 150px 300px 100px;
+            
+             gap: 5px;
+         }
+         .child{background: rgb(228, 177, 9);}
+         #item1{ grid-column: 1/4; }
+         #item2{ grid-row: 2/4; }
+         #item5{ grid-column: 2/4; }
+
+
+    </style>
+</head>
+<body>
+    <!-- Using Grid Making layout no.1 -->
+
+        <div class="wrapped">
+            <div class="child" id="item1">Header</div>
+            <div class="child" id="item2">nav</div>
+            <div class="child" id="item3">Article</div>
+            <div class="child" id="item4">Ads</div>
+            <div class="child" id="item5">footer</div>
+        </div>
+
+</body>
+</html>
